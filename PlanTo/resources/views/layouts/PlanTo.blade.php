@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>
-    @yield('title')
+        @yield('title')
     </h1>
     <div class="menubar">
-    @yield('menubar')
+        @yield('menubar')
     </div>
     <div class="content">
         @yield('content')
