@@ -1,0 +1,118 @@
+.unfollow {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #fff;
+    background-color: #e3342f;
+    border-color: #e3342f;
+    }
+    
+.unfollow:hover {
+    color: #fff;
+    background-color: #d0211c;
+    border-color: #c51f1a;
+    }
+
+.unfollow:focus,
+.unfollow.focus {
+    color: #fff;
+    background-color: #d0211c;
+    border-color: #c51f1a;
+    box-shadow: 0 0 0 0.2rem rgba(231, 82, 78, 0.5);
+}
+
+.unfollow.disabled,
+.unfollow:disabled {
+    color: #fff;
+    background-color: #e3342f;
+    border-color: #e3342f;
+}
+
+.unfollow:not(:disabled):not(.disabled):active,
+.unfollow:not(:disabled):not(.disabled).active,
+.show > .unfollow.dropdown-toggle {
+    color: #fff;
+    background-color: #c51f1a;
+    border-color: #b91d19;
+}
+
+.unfollow:not(:disabled):not(.disabled):active:focus,
+.unfollow:not(:disabled):not(.disabled).active:focus,
+.show > .unfollow.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(231, 82, 78, 0.5);
+}
+
+.follow{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #fff;
+    background-color: #3490dc;
+    border-color: #3490dc;
+    }
+
+.follow:hover {
+    color: #fff;
+    background-color: #227dc7;
+    border-color: #2176bd;
+    }
+
+
+.follow:hover {
+    color: #fff;
+    background-color: #227dc7;
+    border-color: #2176bd;
+}
+
+.follow:focus,
+.follow.focus {
+    color: #fff;
+    background-color: #227dc7;
+    border-color: #2176bd;
+    box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
+}
+
+.follow.disabled,
+.follow:disabled {
+    color: #fff;
+    background-color: #3490dc;
+    border-color: #3490dc;
+}
+
+.follow:not(:disabled):not(.disabled):active,
+.follow:not(:disabled):not(.disabled).active,
+.show > .follow.dropdown-toggle {
+    color: #fff;
+    background-color: #2176bd;
+    border-color: #1f6fb2;
+}
+
+.follow:not(:disabled):not(.disabled):active:focus,
+.follow:not(:disabled):not(.disabled).active:focus,
+.show > .follow.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
+}

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFollwersTable extends Migration
+class CreateCalendarsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateFollwersTable extends Migration
      */
     public function up()
     {
-        Schema::create('follwers', function (Blueprint $table) {
-            $table->integer('following_id');
-            $table->integer('followed_id');
+        Schema::create('Calendars', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id');
+            $table->date('day'); 
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateFollwersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('follwers');
+        Schema::dropIfExists('Calendars');
     }
 }

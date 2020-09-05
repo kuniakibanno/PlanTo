@@ -21,9 +21,17 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'PostsController@index')->name('home');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+
 Route::group(['middleware' => 'auth'], function() {
+    Route::get('users/serch', 'UsersController@serch')->name('serch');
     Route::resource('users', 'UsersController', ['only' => ['index', 'show', 'edit', 'update']]);
+    Route::post('users/{user_id}/follow', 'UsersController@follow',['user_id'=>'{user_id}'])->name('follow');
+    Route::delete('users/{user_id}/unfollow', 'UsersController@unfollow',['user_id'=>'{user_id}'])->name('unfollow');
+    Route::resource('posts', 'PostsController', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    Route::resource('calendars', 'CalendarsController', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    Route::get('calendars/{day?}', 'CalendarsController@show');
+    Route::get('/calendars/{year?}/{month?}', 'CalendarsController@index_prev_next');
 });

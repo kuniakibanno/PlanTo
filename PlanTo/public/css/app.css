@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);
 
 /*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * ootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -464,6 +464,7 @@ mark,
   padding: 0.2em;
   background-color: #fcf8e3;
 }
+
 
 .list-unstyled {
   padding-left: 0;
@@ -2661,7 +2662,7 @@ textarea.form-control.is-invalid {
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
-     -moz-user-select: none;
+    -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: transparent;
@@ -2671,6 +2672,7 @@ textarea.form-control.is-invalid {
   line-height: 1.6;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin:auto 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -10630,6 +10632,8 @@ button.bg-dark:focus {
   .text-sm-center {
     text-align: center !important;
   }
+
+  
 }
 
 @media (min-width: 768px) {
@@ -10928,3 +10932,9 @@ a.text-dark:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .catalog{
+    position:relative;
+    top:180px;
+  }
+}
